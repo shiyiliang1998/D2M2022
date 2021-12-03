@@ -1,2 +1,3 @@
 *.wav
 localonly/*
+.DS_Store
