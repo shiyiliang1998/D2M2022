@@ -22,6 +22,8 @@ This is an R Markdown document. Markdown is a simple formatting syntax for autho
 Next time we'll start with a papaja template
 -->
 
+This is a reference @xie2018bookdown.
+
 You may want to cite references in different formats depending on the surrounding sentential context, e.g.:
 
 Casillas, in her [-@casillas2022d2mr] course, states that Rmarkdown is awesome.
@@ -32,7 +34,7 @@ Rmarkdown is awesome [e.g., @xie2018bookdown; @casillas2022d2mr]
 
 Rmarkdown is awesome [e.g., smooth workflow\; @xie2018bookdown; see also @casillas2022d2mr]
 
-<!--Same-year, same-author publications are automatically disambiguated [e.g., @casillas2021r; @casillas2021productive]-->
+Same-year, same-author publications are automatically disambiguated [e.g., @casillas2021r; @casillas2021productive]
 
 We learned all about ggplot [see @wickham2016r4ds, ch. 1]
 
@@ -57,12 +59,10 @@ plot(pressure)
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
 
-<!--
 ---
 nocite: |
   @tierney2020rmarkdown, @douglas2022introduction
 ---
--->
 
 # References
 
