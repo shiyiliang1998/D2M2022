@@ -30,11 +30,14 @@ Rmarkdown is awesome [@xie2018bookdown; @casillas2022d2mr; @casillas2021r]
 
 Rmarkdown is awesome [e.g., @xie2018bookdown; @casillas2022d2mr]
 
+Rmarkdown is awesome [e.g., smooth workflow\; @xie2018bookdown; see also @casillas2022d2mr]
+
 <!--Same-year, same-author publications are automatically disambiguated [e.g., @casillas2021r; @casillas2021productive]-->
 
 We learned all about ggplot [see @wickham2016r4ds, ch. 1]
 
 We learned about ggplot with @wickham2016r4ds [, ch. 1]
+
 
 
 When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
