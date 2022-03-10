@@ -30,6 +30,7 @@ footnotelist      : no
 linenumbers       : no
 mask              : no
 draft             : no
+numbersections    : yes
 
 documentclass     : "apa6"
 classoption       : "man"
@@ -89,7 +90,7 @@ mtcars.tidy %>%
   knitr::kable(caption = "Brands included, along with average number of cylinders and average weight among the number of models included for each brand.")
 ```
 
-We show the unique brands along with their average number of cylinders, average weight, and number of models represented in the dataset in Table \@ref(tab:summary-tbl). We summarize our findings in subsection \@ref(results) and note that subsection \@ref(references-we-love) is unrelated to this report.
+We show the unique brands along with their average number of cylinders, average weight, and number of models represented in the dataset in Table \@ref(tab:summary-tbl).
 
 ```{r run-lm}
 mpg.model <- lmer(mpg ~ cyl * transmission + (1|brand), mtcars.tidy)
@@ -115,15 +116,17 @@ ggplot(mtcars.tidy, aes(cyl, mpg, color = transmission, fill = transmission)) +
 
 These effects are visualized in Figure \@ref(fig:plot-primary-results). 
 
-# Discussion
+# Discussion {#disc}
 
 In this study we investigated the relationship between miles per gallon, number of cylinders, and transmission type in the `mtcars` dataset. Unsurprisingly, cars with more cylinders and cars with automatic transmissions had lower mileage. The effect of transmission depended on the number of cylinders, such that the mileage benefit associated with manual transmissions decreased for cars with more cylinders. Based on these data, someone trying to maximize their mileage should choose a manual transmission, low-cylinder vehicle.
 
-## References we love
+## References we love {#refs}
 
 You may want to cite references in different formats depending on the surrounding sentential context, e.g.: Casillas, in her [-@casillas2022d2mr] course, states that Rmarkdown is awesome. Rmarkdown is awesome [@xie2018bookdown; @casillas2022d2mr; @casillas2021r]. Rmarkdown is awesome [e.g., @xie2018bookdown; @casillas2022d2mr]. Same-year, same-author publications are automatically disambiguated [e.g., @casillas2021r; @casillas2021productive]. We learned all about ggplot [see @wickham2016r4ds, ch. 1]. We learned about ggplot with @wickham2016r4ds [, ch. 1].
 
 This reproducible manuscript is written in Rmarkdown [@xie2018bookdown], using the lme4 [@lme4] to run statistical models and ggplot2 [@ggplot2] within the tidyverse package [@wickham2016r4ds] to generate plots.
+
+We summarize our findings in subsection \@ref(disc) and note that subsection \@ref(refs) is unrelated to this report.
 
 \newpage
 

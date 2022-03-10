@@ -60,7 +60,7 @@
 \setlength{\emergencystretch}{3em} % prevent overfull lines
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
-\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\setcounter{secnumdepth}{5}
 % Make \paragraph and \subparagraph free-standing
 \ifx\paragraph\undefined\else
   \let\oldparagraph\paragraph
@@ -232,7 +232,7 @@ Pontiac & 8.0 & 3.9 & 1\\
 \end{tabular}
 \end{table}
 
-We show the unique brands along with their average number of cylinders, average weight, and number of models represented in the dataset in Table \ref{tab:summary-tbl}. We summarize our findings in subsection \ref{results} and note that subsection \ref{references-we-love} is unrelated to this report.
+We show the unique brands along with their average number of cylinders, average weight, and number of models represented in the dataset in Table \ref{tab:summary-tbl}.
 
 \hypertarget{results}{%
 \section{Results}\label{results}}
@@ -247,17 +247,19 @@ We modeled mileage with a linear mixed-effects regression, including fixed effec
 
 These effects are visualized in Figure \ref{fig:plot-primary-results}.
 
-\hypertarget{discussion}{%
-\section{Discussion}\label{discussion}}
+\hypertarget{disc}{%
+\section{Discussion}\label{disc}}
 
 In this study we investigated the relationship between miles per gallon, number of cylinders, and transmission type in the \texttt{mtcars} dataset. Unsurprisingly, cars with more cylinders and cars with automatic transmissions had lower mileage. The effect of transmission depended on the number of cylinders, such that the mileage benefit associated with manual transmissions decreased for cars with more cylinders. Based on these data, someone trying to maximize their mileage should choose a manual transmission, low-cylinder vehicle.
 
-\hypertarget{references-we-love}{%
-\subsection{References we love}\label{references-we-love}}
+\hypertarget{refs}{%
+\subsection{References we love}\label{refs}}
 
 You may want to cite references in different formats depending on the surrounding sentential context, e.g.: Casillas, in her (2022) course, states that Rmarkdown is awesome. Rmarkdown is awesome (Casillas, 2021a, 2022; Xie, Allaire, \& Grolemund, 2018). Rmarkdown is awesome (Casillas, 2022; e.g., Xie, Allaire, \& Grolemund, 2018). Same-year, same-author publications are automatically disambiguated (e.g., Casillas, 2021a, 2021b). We learned all about ggplot (see Wickham \& Grolemund, 2016, ch.~1). We learned about ggplot with Wickham and Grolemund (2016, ch.~1).
 
 This reproducible manuscript is written in Rmarkdown (Xie, Allaire, \& Grolemund, 2018), using the lme4 (Bates, Mächler, Bolker, \& Walker, 2015) to run statistical models and ggplot2 (Wickham, 2016) within the tidyverse package (Wickham \& Grolemund, 2016) to generate plots.
+
+We summarize our findings in subsection \ref{disc} and note that subsection \ref{refs} is unrelated to this report.
 
 \newpage
 
